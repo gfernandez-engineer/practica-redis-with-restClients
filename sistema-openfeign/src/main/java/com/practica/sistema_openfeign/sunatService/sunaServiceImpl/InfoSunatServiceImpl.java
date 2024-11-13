@@ -20,7 +20,7 @@ import java.util.Objects;
 public class InfoSunatServiceImpl implements InfoSunatService {
     private final RedisService redisService;
     private final ClientSunat clientSunat;
-    
+
     @Value("${token.api}")
     private String token;
 
