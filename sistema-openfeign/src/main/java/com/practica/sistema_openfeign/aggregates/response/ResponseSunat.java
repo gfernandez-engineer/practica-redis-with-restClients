@@ -1,4 +1,4 @@
-package com.practica.sistema_openfeign.response;
+package com.practica.sistema_openfeign.aggregates.response;
 
 
 import jakarta.servlet.http.PushBuilder;
