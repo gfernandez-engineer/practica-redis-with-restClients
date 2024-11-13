@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "a0dff359-5ae2-4a50-91ab-94807b07db22",
+		"name": "Practica Api ext + Client REST + REDIS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "700744"
+	},
+	"item": [
+		{
+			"name": "RETROFIT + REDIS",
+			"item": [
+				{
+					"name": "GET - RUC - RETROFIT",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/v1/retrofit/infoSunat?ruc=10460278975",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"v1",
+								"retrofit",
+								"infoSunat"
+							],
+							"query": [
+								{
+									"key": "ruc",
+									"value": "10460278975"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - RUC - RETROFIT",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/v1/personaJuridica/guardar?ruc=10460278975",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"v1",
+								"personaJuridica",
+								"guardar"
+							],
+							"query": [
+								{
+									"key": "ruc",
+									"value": "10460278975"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "OPEN FEIGN + REDIS",
+			"item": [
+				{
+					"name": "GET - RUC - OPENFEIGN",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/v1/openFeign/infoSunat?ruc=10460278975",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"v1",
+								"openFeign",
+								"infoSunat"
+							],
+							"query": [
+								{
+									"key": "ruc",
+									"value": "10460278975"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "REST TEMPLATE + REDIS",
+			"item": [
+				{
+					"name": "GET - RUC - RESTTEMPLATE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/v1/restTemplate/infoSunat?ruc=10460278975",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"v1",
+								"restTemplate",
+								"infoSunat"
+							],
+							"query": [
+								{
+									"key": "ruc",
+									"value": "10460278975"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "OTROS",
+			"item": [
+				{
+					"name": "GET - RUC - RETROFIT Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/v1/personaJuridica?ruc=10460278975",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"v1",
+								"personaJuridica"
+							],
+							"query": [
+								{
+									"key": "ruc",
+									"value": "10460278975"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "APIS.NET.PE",
+			"item": [
+				{
+					"name": "GET - RUC - APIS NET",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "apis-token-11203.kDlBqSvCDeDuhMXpAqX8gamgPSHw98C2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.apis.net.pe/v2/sunat/ruc?numero=10460278975",
+							"protocol": "https",
+							"host": [
+								"api",
+								"apis",
+								"net",
+								"pe"
+							],
+							"path": [
+								"v2",
+								"sunat",
+								"ruc"
+							],
+							"query": [
+								{
+									"key": "numero",
+									"value": "10460278975"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

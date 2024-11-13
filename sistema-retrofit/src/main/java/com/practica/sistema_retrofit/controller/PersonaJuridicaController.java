@@ -26,7 +26,7 @@ public class PersonaJuridicaController {
                 .getInfoSunat(ruc), HttpStatus.OK);
     }
 
-    @PostMapping()
+    @PostMapping("/guardar")
     public ResponseEntity<PersonaJuridicaEntity> guardarPersona (
             @RequestParam("ruc") String ruc) throws IOException {
         PersonaJuridicaEntity personaJuridica = personaJuridicaService.guardar(ruc);
